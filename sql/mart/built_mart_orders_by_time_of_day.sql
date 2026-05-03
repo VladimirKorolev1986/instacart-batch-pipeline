@@ -1,6 +1,6 @@
-drop table if exists mart.mart_orders_by_hour;
+drop table if exists mart.mart_orders_by_time_of_day;
 
-create table mart.mart_orders_by_hour as
+create table mart.mart_orders_by_time_of_day as
 with base as (
     select
         order_hour_of_day,
@@ -18,4 +18,4 @@ select
 from base
 group by time_of_day;
 
-select * from mart.mart_orders_by_hour;
+select * from mart.mart_orders_by_time_of_day;
