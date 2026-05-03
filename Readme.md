@@ -89,9 +89,9 @@ Current version includes:
 
 ## Repository Structure
 
-data/raw/          - source CSV files
-scripts/           - Python loader
-sql/staging/       - staging SQL scripts
-sql/core/          - core layer SQL scripts
-sql/mart/          - mart layer SQL scripts
-docker-compose.yml - PostgreSQL setup
+- `data/raw/` — source CSV files
+- `scripts/` — Python loader
+- `sql/staging/` — staging SQL scripts
+- `sql/core/` — core layer SQL scripts
+- `sql/mart/` — mart layer SQL scripts
+- `docker-compose.yml` — PostgreSQL setup
