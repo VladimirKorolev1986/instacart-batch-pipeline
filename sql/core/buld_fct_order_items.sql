@@ -28,3 +28,7 @@ select
     (select count(*) from staging.stg_order_products_train);
     
 select * from core.fct_order_items limit 10;
+
+select distinct reordered
+
+from core.fct_order_items;

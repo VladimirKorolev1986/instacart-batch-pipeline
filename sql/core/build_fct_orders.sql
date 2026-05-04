@@ -16,3 +16,10 @@ limit 10;
 
 select count(*) from staging.stg_orders so;
 select count(*) from core.fct_orders;
+
+
+select *
+
+from core.fct_orders
+
+where order_hour_of_day not between 0 and 23;
